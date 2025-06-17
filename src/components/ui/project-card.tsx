@@ -24,7 +24,6 @@ interface Project {
   description: string
   tags: string[]
   link: string
-  linkType: "github" | "website"
   date: string
   type: string
   color: string // e.g., "from-purple-400 to-pink-500"
@@ -108,13 +107,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           className="w-full group-hover:bg-blue-50 group-hover:border-blue-200"
         >
           <Link href={project.link} target="_blank" rel="noopener noreferrer">
-            {project.linkType === "github" ? (
+            {project.link.includes("github.com") ? (
               <>
                 <Github className="mr-2 h-4 w-4" /> View Repository
               </>
             ) : (
               <>
-                <ExternalLink className="mr-2 h-4 w-4" /> Visit Website
+                <ExternalLink className="mr-2 h-4 w-4" /> Visit Project
               </>
             )}
           </Link>

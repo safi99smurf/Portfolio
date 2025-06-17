@@ -150,14 +150,7 @@ export default function Home() {
     "Data Visualization projects",
   ]
 
-  const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Publications", href: "#publications" },
-    { name: "Contact", href: "#contact" },
-  ]
+
 
   return (
     <main className="min-h-screen">
@@ -177,10 +170,10 @@ export default function Home() {
             • Computer Science  • Data Science • Machine Learning
             </div>
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-6">Syed Ali Safi</h1>
-            <p className="text-xl md:text-2xl text-slate-300 mb-4">Software Developer & Research Assistant</p>
+            <p className="text-xl md:text-2xl text-slate-300 mb-4">Software Engineer</p>
             <p className="text-lg text-slate-400 mb-8 max-w-3xl leading-relaxed">
-              Bridging economics, politics, and technology through innovative software solutions. Currently developing
-              ed-tech applications at Soop while contributing to AI research at University of Western Ontario.
+              Driven by a deep passion for software engineering and innovation, I enjoy turning ideas into impactful experiences.
+              With a focus on clean architecture, performance, and usability, I strive to build applications that make a real difference in people’s lives.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-white text-slate-900 hover:bg-slate-100">
